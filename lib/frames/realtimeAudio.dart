@@ -42,8 +42,8 @@ class _RealTimeAudioTranslateState extends State<RealTimeAudioTranslate> {
             i++;
           } else {
             t.cancel();
-            audioController.speechText = "Speak......";
-            _signString = 'Audio Translate';
+            audioController.speechText = "Speak..";
+            _signString = 'Audio Translation';
           }
         },
       ),
@@ -68,7 +68,7 @@ class _RealTimeAudioTranslateState extends State<RealTimeAudioTranslate> {
                     ),
                     height: frameHeight * 0.75,
                     decoration: const BoxDecoration(
-                      color: primaryColor,
+                      color: Color.fromARGB(255, 184, 184, 184),
                       borderRadius: BorderRadius.only(
                         bottomLeft: Radius.circular(50),
                         bottomRight: Radius.circular(50),
@@ -143,7 +143,7 @@ class _RealTimeAudioTranslateState extends State<RealTimeAudioTranslate> {
                   height: frameHeight * 0.07,
                   width: MediaQuery.of(context).size.width,
                   decoration: BoxDecoration(
-                    color: Colors.white,
+                    color: Color.fromARGB(255, 184, 184, 184),
                     borderRadius: BorderRadius.circular(20),
                     boxShadow: [
                       BoxShadow(
@@ -188,7 +188,7 @@ class _RealTimeAudioTranslateState extends State<RealTimeAudioTranslate> {
                   height: 60,
                   width: 60,
                   decoration: BoxDecoration(
-                    color: primaryColor,
+                    color: Color.fromARGB(255, 184, 184, 184),
                     borderRadius: BorderRadius.circular(40),
                     boxShadow: [
                       BoxShadow(
@@ -202,7 +202,7 @@ class _RealTimeAudioTranslateState extends State<RealTimeAudioTranslate> {
                     audioController.isListening.value
                         ? Icons.mic
                         : Icons.mic_none,
-                    color: Colors.white,
+                    color: Colors.black,
                   ),
                 ),
               ),

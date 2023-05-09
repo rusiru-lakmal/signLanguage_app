@@ -183,31 +183,6 @@ class _HomeState extends State<Home> {
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                      GestureDetector(
-                        onTap: () {
-                          setState(
-                            () {
-                              borderList[0] = true;
-                              borderList[1] =
-                                  borderList[2] = borderList[3] = false;
-                            },
-                          );
-                          Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                              builder: (context) =>
-                                  RealTimeTranslate(title: classifier),
-                            ),
-                          );
-                        },
-                        child: Container(
-                          width: 130,
-                          height: 130,
-                          decoration: boxDecoration(containerColor, 0),
-                          child:
-                              buttonContent('assets/icons/camera.png', "Video"),
-                        ),
-                      ),
                       const SizedBox(width: 30),
                       GestureDetector(
                         onTap: () {

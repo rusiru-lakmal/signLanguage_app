@@ -24,7 +24,7 @@ class TextTranslation extends StatelessWidget {
       padding: const EdgeInsets.symmetric(horizontal: kDefaultPadding),
       height: 50,
       decoration: BoxDecoration(
-        color: Colors.white,
+        color: Color.fromARGB(255, 184, 184, 184),
         borderRadius: BorderRadius.circular(20),
         boxShadow: [
           BoxShadow(
@@ -41,17 +41,19 @@ class TextTranslation extends StatelessWidget {
               onSubmitted: (_) => onSubmitted(),
               controller: phraseController,
               decoration: InputDecoration(
-                hintText: "Type here...",
-                hintStyle: TextStyle(color: primaryTeal.withOpacity(0.5)),
+                hintText: "Type here.",
+                hintStyle: TextStyle(color: Colors.black),
                 enabledBorder: InputBorder.none,
                 focusedBorder: InputBorder.none,
               ),
             ),
           ),
           GestureDetector(
-            onTap: onSubmitted,
-              child: SvgPicture.asset("assets/icons/search.svg")
-          ),
+              onTap: onSubmitted,
+              child: SvgPicture.asset(
+                "assets/icons/search.svg",
+                color: Colors.black,
+              )),
         ],
       ),
     );

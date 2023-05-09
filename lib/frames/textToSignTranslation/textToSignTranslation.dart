@@ -97,24 +97,6 @@ class _TextToSignTranslationState extends State<TextToSignTranslation> {
                   child: FittedBox(
                     fit: BoxFit.fill,
                     child: Container(
-                      decoration: BoxDecoration(
-                        border: Border.all(
-                          color: Color.fromARGB(255, 252, 252, 252),
-                          width: 2.0,
-                        ),
-                        boxShadow: const [
-                          BoxShadow(
-                            blurStyle: BlurStyle.outer,
-                            blurRadius: 10,
-                            color: Color.fromARGB(255, 205, 202, 202),
-                          ),
-                          BoxShadow(
-                            blurStyle: BlurStyle.inner,
-                            blurRadius: 15,
-                            color: Color.fromARGB(255, 165, 161, 161),
-                          )
-                        ],
-                      ),
                       child: Image.asset(
                         _signString == 'Text Translate'
                             ? 'assets/images/typing animation.gif'

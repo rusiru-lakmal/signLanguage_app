@@ -53,3 +53,18 @@ class _LoadingPageState extends State<LoadingPage> {
     );
   }
 }
+
+@override
+Widget build(BuildContext context) {
+  return AnimatedSplashScreen(
+    splash: const Icon(
+      Icons.language,
+      size: 100,
+      color: Colors.white,
+    ),
+    nextScreen: Home(),
+    splashTransition: SplashTransition.fadeTransition,
+    backgroundColor: Colors.white,
+    duration: 3000,
+  );
+}

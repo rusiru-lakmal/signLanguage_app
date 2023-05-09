@@ -23,7 +23,7 @@ class _SignToTextTranslationState extends State<SignToTextTranslation> {
   Classifier? classifier;
   _SignToTextTranslationState({this.classifier});
   late File _image;
-  String label = "Select a image...";
+  String label = "Select a image.";
   String score = "";
 
   Future pickImage() async {
@@ -56,7 +56,7 @@ class _SignToTextTranslationState extends State<SignToTextTranslation> {
                     ),
                     height: frameHeight * 0.85,
                     decoration: const BoxDecoration(
-                      color: primaryColor,
+                      color: Color.fromARGB(255, 184, 184, 184),
                       borderRadius: BorderRadius.only(
                         bottomLeft: Radius.circular(50),
                         bottomRight: Radius.circular(50),
@@ -87,7 +87,7 @@ class _SignToTextTranslationState extends State<SignToTextTranslation> {
                         ? Container(
                             decoration: BoxDecoration(
                               border: Border.all(
-                                color: Colors.lightBlueAccent,
+                                color: Color.fromARGB(255, 184, 184, 184),
                               ),
                             ),
                             child: Image.file(image!),
@@ -118,13 +118,13 @@ class _SignToTextTranslationState extends State<SignToTextTranslation> {
                 right: 0,
                 child: Container(
                   margin: const EdgeInsets.all(20),
-                  padding: label == "Select a image..."
+                  padding: label == "Select a image."
                       ? const EdgeInsets.all(20)
                       : const EdgeInsets.symmetric(horizontal: 20),
                   height: frameHeight * 0.07,
                   width: MediaQuery.of(context).size.width,
                   decoration: BoxDecoration(
-                    color: Colors.white,
+                    color: Color.fromARGB(255, 184, 184, 184),
                     borderRadius: BorderRadius.circular(20),
                     boxShadow: [
                       BoxShadow(
@@ -148,10 +148,11 @@ class _SignToTextTranslationState extends State<SignToTextTranslation> {
         ],
       ),
       floatingActionButton: FloatingActionButton(
+        backgroundColor: Color.fromARGB(255, 184, 184, 184),
         onPressed: () {
           pickImage();
         },
-        child: const Icon(Icons.image_search),
+        child: const Icon(Icons.image_search, color: Colors.black),
       ),
       floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,
     );
