@@ -73,6 +73,7 @@ class _HomeState extends State<Home> {
                               color: Colors.white,
                               fontSize: 40,
                               fontFamily: 'Montserrat',
+                              fontWeight: FontWeight.bold,
                             ),
                             textAlign: TextAlign.center,
                           ),
@@ -82,10 +83,10 @@ class _HomeState extends State<Home> {
                         ),
                         const Center(
                           child: Text(
-                            "What can I\ntranslate for you today?",
+                            "What can \nI translate for you today",
                             style: TextStyle(
                               color: Colors.white,
-                              fontSize: 40,
+                              fontSize: 30,
                               fontFamily: 'Montserrat',
                             ),
                             textAlign: TextAlign.center,
@@ -226,7 +227,7 @@ class _HomeState extends State<Home> {
       border: borderList[index]
           ? Border.all(color: color, width: 3.0)
           : Border.all(color: Colors.grey.shade300),
-      borderRadius: BorderRadius.circular(40),
+      borderRadius: BorderRadius.circular(70),
       boxShadow: const [
         BoxShadow(
           blurStyle: BlurStyle.outer,
