@@ -8,6 +8,7 @@ import '../controller/classifier.dart';
 import 'realtime.dart';
 import 'realtimeAudio.dart';
 import 'text2sign.dart';
+import 'package:animated_text_kit/animated_text_kit.dart';
 
 class Home extends StatefulWidget {
   late Classifier? classifier;
@@ -91,7 +92,7 @@ class _HomeState extends State<Home> {
                             ),
                             textAlign: TextAlign.center,
                           ),
-                        )
+                        ),
                       ],
                     ),
                   ),
